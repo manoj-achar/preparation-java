@@ -6,7 +6,6 @@ public class RotateTwoDimensionalArray {
         for(int i = 0; i < matrix.length; i++) {
             for(int j = i; j < matrix.length; j++) {
                 if(i != j) {
-                    System.out.println("Swapping " + matrix[i][j] + " with " + matrix[j][i]);
                     int tmp = matrix[i][j];
                     matrix[i][j] = matrix[j][i];
                     matrix[j][i] = tmp;
@@ -43,7 +42,7 @@ public class RotateTwoDimensionalArray {
     static void printArray(int[][] matrix) {
         System.out.println("{");
         for (int[] ints : matrix) {
-            System.out.print("{");
+            System.out.print("\t{");
             for (int anInt : ints) {
                 System.out.print(anInt + ",");
             }
